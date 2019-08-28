@@ -50,7 +50,8 @@ namespace CursoMVCCoreProj.Controllers
         // GET: Curso/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            Curso objCurso = new Curso { Codigo = id, Nome = "Developing MVC Core Web Applications" };
+            return View(objCurso);
         }
 
         // POST: Curso/Edit/5
